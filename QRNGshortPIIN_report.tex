@@ -1,0 +1,34 @@
+\documentclass[]{article}
+\usepackage[margin = 1.3in]{geometry}
+
+%opening
+\title{Quantum Random Number Generation from Shot Noise and Phase-induced Intensity Noise}
+\author{Robin Camphausen}
+\date{}
+%\usepackage[sorting=none]{biblatex}
+%\bibliography{bibliographyFibreEye}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[font = {small,it}]{caption}
+\usepackage{subcaption}
+\usepackage{cite}
+%\bibliographystyle{unsrt}
+%\usepackage{notoccite}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+
+\begin{document}
+\maketitle
+\section{Introduction}
+Quantum random number generators (QRNGs) are important for a large number of applications, including for finance, communication and computational modelling \cite{herrero-collantes_quantum_2017}. One way to generate quantum random numbers (QRNs) is to measure shot noise, which arises due to the quantised nature of light: when observing a light source over a given time frame a discrete number of photons will arrive at the detector and while the average number of photons stays constant there is a variance in the number of arrivals per time frame \cite{sanguinetti_quantum_2014}. It is also possible to generate QRNs by measuring phase noise, which is due to the fact that a spontaneously emitted photon has a completely random phase, uniformly distributed between $0$ and $\pi$ \cite{xu_ultrafast_2012,abellan_ultra-fast_2014}. In this report we describe a hybrid QRNG method, which increases the randomness able to be extracted in the Shot noise method by also taking into account the random optical phases of the light source.
+
+\section{Phase Noise - Random Phasor Sums}
+A single spontaneously emitted photon has random phase, but it is of course not possible to measure the phase of a single photon. In references \cite{abellan_ultra-fast_2014,mitchell_strong_2015,abellan_generation_2015} therefore, the single spontaneously emitted photon is generated inside a laser cavity, which subsequently uses stimulated emission to generate many copies of this first photon until the light intensity is large enough for an interferometric measurement of the phase. The laser must subsequently be switched off again to allow all stimulated photons in the cavity to decay, and to allowgh
+
+
+\bibliography{cameraQRNG_bib}{}
+
+\end{document}
