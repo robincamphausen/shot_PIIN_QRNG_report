@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+
+\bibitem{herrero-collantes_quantum_2017}
+M.~Herrero-Collantes and J.~C. Garcia-Escartin, ``Quantum random number
+  generators,'' {\em Reviews of Modern Physics}, vol.~89, Feb. 2017.
+
+\bibitem{sanguinetti_quantum_2014}
+B.~Sanguinetti, A.~Martin, H.~Zbinden, and N.~Gisin, ``Quantum {Random}
+  {Number} {Generation} on a {Mobile} {Phone},'' {\em Physical Review X},
+  vol.~4, p.~031056, Sept. 2014.
+
+\bibitem{xu_ultrafast_2012}
+F.~Xu, B.~Qi, X.~Ma, H.~Xu, H.~Zheng, and H.-K. Lo, ``Ultrafast quantum random
+  number generation based on quantum phase fluctuations,'' {\em Optics
+  Express}, vol.~20, pp.~12366--12377, May 2012.
+
+\bibitem{abellan_ultra-fast_2014}
+C.~Abellán, W.~Amaya, M.~Jofre, M.~Curty, A.~Acín, J.~Capmany, V.~Pruneri,
+  and M.~W. Mitchell, ``Ultra-fast quantum randomness generation by accelerated
+  phase diffusion in a pulsed laser diode,'' {\em Optics Express}, vol.~22,
+  p.~1645, Jan. 2014.
+
+\bibitem{mitchell_strong_2015}
+M.~W. Mitchell, C.~Abellan, and W.~Amaya, ``Strong experimental guarantees in
+  ultrafast quantum random number generation,'' {\em Physical Review A},
+  vol.~91, p.~012314, Jan. 2015.
+
+\bibitem{abellan_generation_2015}
+C.~Abellán, W.~Amaya, D.~Mitrani, V.~Pruneri, and M.~W. Mitchell, ``Generation
+  of {Fresh} and {Pure} {Random} {Numbers} for {Loophole}-{Free} {Bell}
+  {Tests},'' {\em Physical Review Letters}, vol.~115, p.~250403, Dec. 2015.
+
+\bibitem{goodman_statistical_2000}
+J.~W. Goodman, {\em Statistical optics}.
+\newblock Wiley classics library, New York: Wiley, wiley classics library
+  ed~ed., 2000.
+
+\bibitem{argyris_sub-tb/s_2012}
+A.~Argyris, E.~Pikasis, S.~Deligiannidis, and D.~Syvridis, ``Sub-{Tb}/s
+  {Physical} {Random} {Bit} {Generators} {Based} on {Direct} {Detection} of
+  {Amplified} {Spontaneous} {Emission} {Signals},'' {\em Journal of Lightwave
+  Technology}, vol.~30, pp.~1329--1334, May 2012.
+
+\bibitem{li_random_2014}
+L.~Li, A.~Wang, P.~Li, H.~Xu, L.~Wang, and Y.~Wang, ``Random {Bit} {Generator}
+  {Using} {Delayed} {Self}-{Difference} of {Filtered} {Amplified} {Spontaneous}
+  {Emission},'' {\em IEEE Photonics Journal}, vol.~6, pp.~1--9, Feb. 2014.
+
+\bibitem{huang_real-time_2014}
+M.~Huang, A.~Wang, P.~Li, H.~Xu, and Y.~Wang, ``Real-time 3gbit/s true random
+  bit generator based on a super-luminescent diode,'' {\em Optics
+  Communications}, vol.~325, pp.~165--169, Aug. 2014.
+
+\bibitem{li_scalable_2011}
+X.~Li, A.~B. Cohen, T.~E. Murphy, and R.~Roy, ``Scalable parallel physical
+  random number generator based on a superluminescent {LED},'' {\em Optics
+  Letters}, vol.~36, p.~1020, Mar. 2011.
+
+\end{thebibliography}
