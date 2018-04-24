@@ -100,9 +100,19 @@
 		\begin{equation}
 		\mean{I}_{det} = \frac{1}{2}, \quad \sigma_{det} = \frac{1}{\sqrt{8M}} \label{eq:simpleTwoMode_stats}.
 		\end{equation}
-	Importantly, what eq. \ref{eq:simpleTwoMode_stats} shows is that as the integration time $T$ gets much larger than the coherence time $\tau_c$, the ratio $M$ becomes large and the standard deviation in the detected intensity fluctuation tends to zero. This simple model therefore yields three important conclusions: Firstly, eq. \ref{eq:simpleTwoMode_stats} is consistent with our everyday experience, because for thermal light sources commonly encountered (such as incandescent lightbulbs) the coherence time is much shorter than the integration time of the human eye - and thus the PIIN is not readily observed. Secondly it indicates that to extract random numbers from PIIN the light must be measured fast, and indeed the faster it is measured the more randomness can be extracted. And thirdly, as measured noise is proportional to $1/\sqrt{M} = \sqrt{\tau_c}/\sqrt{T}$, increasing the coherence time of the thermal light source will also increase the measured noise.\\
-	In fact, as there is a technical limit to the bandwidth of available optical detectors,
-
+	Importantly, what eq. \ref{eq:simpleTwoMode_stats} shows is that as the integration time $T$ gets much larger than the coherence time $\tau_c$, the ratio $M$ becomes large and the standard deviation in the detected intensity fluctuation tends to zero. This simple model therefore yields three important conclusions: Firstly, eq. \ref{eq:simpleTwoMode_stats} is consistent with our everyday experience, because for thermal light sources commonly encountered (such as incandescent lightbulbs) the coherence time is much shorter than the integration time of the human eye - and thus the PIIN is not readily observed. Secondly it indicates that to extract random numbers from PIIN the light must be measured fast, and indeed the faster it is measured the more randomness can be extracted. And thirdly, as measured noise is proportional to $1/\sqrt{M} = \sqrt{\tau_c}/\sqrt{T}$, increasing the coherence time of the thermal light source will also increase the measured noise.
+	
+	Even though we derived  eq. \ref{eq:simpleTwoMode_stats} for a very simple two-mode light model, the statistical properties of a fully incoherent light source are very similar (see chapter 6 in \cite{goodman_statistical_2000}). In particular, in the limit where $T>>\tau_c$, i.e. of a much longer integration time than coherence time, the measured PIIN is described by
+		\begin{equation} 
+		\frac{\sigma_{det}}{\mean{I}_{det}} = \frac{1}{\sqrt{M}} = \sqrt{\frac{\tau_c}{T}}.
+		\label{eq:fullPIINstats}
+		\end{equation}
+	The coherence time $\tau_c$ can be approximated in terms of the light source's centre wavelength $\lambda$ and spectral width $\Delta\lambda$ as follows:
+		\begin{equation}
+		\tau_c = \frac{\lambda^2}{c\Delta\lambda},
+		\label{eq:coherenceTime}
+		\end{equation}
+	where $c$ is the speed of light. By substituting $lambda$ and $\Delta\lambda$ values for typical incoherent light sources such as LEDs or SLEDs into eq. \ref{eq:coherenceTime} we can see that $\tau_c$ is on the sub-picosecond timescale. Integration times of photodetectors on the other hand are normally at least two orders of magnitude larger and thus we can apply \ref{eq:fullPIINstats} as we are comfortably in the $T>>\tau_c$ regime.
 
 \bibliographystyle{ieeetr}
 \bibliography{cameraQRNG_bib}
