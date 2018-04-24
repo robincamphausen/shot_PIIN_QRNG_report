@@ -104,7 +104,7 @@
 	
 	Even though we derived  eq. \ref{eq:simpleTwoMode_stats} for a very simple two-mode light model, the statistical properties of a fully incoherent light source are very similar (see chapter 6 in \cite{goodman_statistical_2000}). In particular, in the limit where $T>>\tau_c$, i.e. of a much longer integration time than coherence time, the measured PIIN is described by
 		\begin{equation} 
-		\frac{\sigma_{det}}{\mean{I}_{det}} = \frac{1}{\sqrt{M}} = \sqrt{\frac{\tau_c}{T}}.
+		\frac{\sigma_{PIIN}}{\mean{I}_{PIIN}} = \frac{1}{\sqrt{M}} = \sqrt{\frac{\tau_c}{T}}.
 		\label{eq:fullPIINstats}
 		\end{equation}
 	The coherence time $\tau_c$ can be approximated in terms of the light source's centre wavelength $\lambda$ and spectral width $\Delta\lambda$ as follows:
@@ -112,7 +112,19 @@
 		\tau_c = \frac{\lambda^2}{c\Delta\lambda},
 		\label{eq:coherenceTime}
 		\end{equation}
-	where $c$ is the speed of light. By substituting $lambda$ and $\Delta\lambda$ values for typical incoherent light sources such as LEDs or SLEDs into eq. \ref{eq:coherenceTime} we can see that $\tau_c$ is on the sub-picosecond timescale. Integration times of photodetectors on the other hand are normally at least two orders of magnitude larger and thus we can apply \ref{eq:fullPIINstats} as we are comfortably in the $T>>\tau_c$ regime.
+	where $c$ is the speed of light. By substituting $\lambda$ and $\Delta\lambda$ values for typical incoherent light sources such as LEDs or SLEDs into eq. \ref{eq:coherenceTime} we can see that $\tau_c$ will be on the sub-picosecond timescale. Integration times of photodetectors on the other hand are normally at least two orders of magnitude larger and thus we can apply \ref{eq:fullPIINstats} as we are comfortably in the $T>>\tau_c$ regime. Lastly, note that one will always measure shot noise in addition to PIIN. Further, any real set-up will also measure some technical or system noise, whose origin is not quantum in nature. We can therefore express the total detected noise in terms of PIIN, shot noise and technical noise:
+		\begin{equation}
+		\sigma_{total} = \sqrt{\sigma_{PIIN}^2 + \sigma_{shot}^2 + \sigma_{technical}^2}.
+		\label{eq:noiseContributions}
+		\end{equation}
+
+	Now, eqs. \ref{eq:fullPIINstats} and \ref{eq:coherenceTime} show that for a given integration time a larger PIIN level can be detected for a long coherence time, which in turn requires a narrow source spectral width. The integration time $T$ on the other hand must be kept as low as possible. In past works measuring PIIN in the near-infrared from SLED sources these requirements were met by using a narrowband spectral filter on the source as well as high bandwidth photodiodes and electronics \cite{huang_real-time_2014, li_scalable_2011}.
+
+\section{QRNG from PIIN using visible LEDs}
+	While random number generation from PIIN has already been demonstrated for near-infrared wavelengths, this was achieved using bulky, expensive and sensitive components such as a SLED which requires careful optical isolation and precise driving current control. However, to transition to a more affordable and portable solution it would be desirable to use a simple LED light source emitting in the visible, which moreover permits the use of silicon-based photodetection. Unfortunately, as eq. \ref{eq:coherenceTime} shows, the coherence time of a light source falls quadratically as the wavelength becomes shorter, resulting in more stringent requirements on the integration time and permissible technical noise. At present, single photon avalanche diodes (SPADs) are the only detection technology for the visible wavelength range capable of achieving the low-noise readout and necessary short integration time.
+
+	SPADs might at first glance seem a strange choice for measuring intensity fluctuations given that a SPAD is neither particularly cheap nor is it a photon number resolving device - upon detection of light a SPAD emits an electronic pulse that is identical regardless of how many photons initiated the detection event. However the recent rapid advances in SPAD arrays being fabricated using industrial CMOS processes means that both of these objections can be addressed. Firstly regarding cost, while a CMOS-fabricated SPAD array is far more expensive than regular CMOS image sensors available for cameras today, the inherent scalability of optimised CMOS processes coupled with the larger volumes being produced means that costs are already orders of magnitude lower than a few years ago, and will continue to fall. Secondly, regarding the ability to differentiate between intensities, it is true that one single SPAD only has an effective resolution of one bit. But by evenly spreading the light to be measured across the entire area of a SPAD array the intensity can be measured by the number of SPADs activated by the incoming light. SPAD arrays of size $512\times 512$ pixels have been fabricated thus far, which already gives significant intensity resolution. The method of detecting PIIN that we present in this report therefore needs four main components: a visible wavelength LED source, a narrowband wavelength filter, SPAD array imager, and some optics to distribute the light across the SPAD array. Remembering that according to eq. \ref{eq:noiseContributions} our set-up will measure the combination of PIIN, shot noise and technical noise, the present scheme can be seen as an extension of the method described in \ref{sanguinetti_quantum_2014}, where random numbers were generated by using a camera to measure the shot noise of an LED. Therefore the proof of principle will be provided by comparing the noise level from only shot noise and technical noise to the noise level when all three types of noise are measured.
+
 
 \bibliographystyle{ieeetr}
 \bibliography{cameraQRNG_bib}
