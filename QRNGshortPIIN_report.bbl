@@ -56,4 +56,29 @@ X.~Li, A.~B. Cohen, T.~E. Murphy, and R.~Roy, ``Scalable parallel physical
   random number generator based on a superluminescent {LED},'' {\em Optics
   Letters}, vol.~36, p.~1020, Mar. 2011.
 
+\bibitem{abbas_cmos_2018}
+T.~A. Abbas, N.~A.~W. Dutton, O.~Almer, N.~Finlayson, F.~M.~D. Rocca, and
+  R.~Henderson, ``A {CMOS} {SPAD} {Sensor} with a {Multi}-{Event} {Folded}
+  {Flash} {Time}-to-{Digital} {Converter} for {Ultra}-fast {Optical}
+  {Transient} {Capture},'' {\em IEEE Sensors Journal}, vol.~PP, no.~99,
+  pp.~1--1, 2018.
+
+\bibitem{gyongy_$256times256$_2018}
+I.~Gyongy, N.~Calder, A.~Davies, N.~A.~W. Dutton, R.~R. Duncan, C.~Rickman,
+  P.~Dalgarno, and R.~K. Henderson, ``A \$256times256\$ , 100-kfps, 61\%
+  {Fill}-{Factor} {SPAD} {Image} {Sensor} for {Time}-{Resolved} {Microscopy}
+  {Applications},'' {\em IEEE Transactions on Electron Devices}, vol.~65,
+  pp.~547--554, Feb. 2018.
+
+\bibitem{webster_high-performance_2012}
+E.~A.~G. Webster, L.~A. Grant, and R.~K. Henderson, ``A {High}-{Performance}
+  {Single}-{Photon} {Avalanche} {Diode} in 130-nm {CMOS} {Imaging}
+  {Technology},'' {\em IEEE Electron Device Letters}, vol.~33, pp.~1589--1591,
+  Nov. 2012.
+
+\bibitem{ulku_512512_2017}
+A.~C. Ulku, C.~Bruschini, X.~Michalet, S.~Weiss, and E.~Charbon, ``A 512×512
+  {SPAD} {Image} {Sensor} with {Built}-{In} {Gating} for {Phasor} {Based}
+  {Real}-{Time} {siFLIM},'' p.~12, 2017.
+
 \end{thebibliography}

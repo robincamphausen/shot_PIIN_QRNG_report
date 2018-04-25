@@ -12,12 +12,13 @@ motivate experiment in visible:
 	- *LEDs easier than SLEDs, also more powerful cheaper LEDs available*
 	- *CMOS not fast enough, need SPAD arrays*
 	- *(SPAD arrays getting cheaper in CMOS processes)*
-	- need some sources for recent SPAD array developments
-	- Sanguinetti: mobile phone camera shot noise
-	- will measure shot noise too: extend measured noise level of Sanguinetti scheme
+	- *need some sources for recent SPAD array developments*
+	- *Sanguinetti: mobile phone camera shot noise*
+	- *will measure shot noise too: extend measured noise level of Sanguinetti scheme*
 	- proof of principle: see difference in noise level between low coherence (PIIN too fast) and longer coherence (PIIN visible)
 
 - SPAD saturation issue: need to stay in quasi-linear regime
+- export saturation curve in high resolution from Matlab:
 ![Image](SPAD_saturationCurve)
 
 Set-up 1: pulsed LED
