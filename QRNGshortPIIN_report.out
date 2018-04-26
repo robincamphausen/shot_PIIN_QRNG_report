@@ -4,4 +4,6 @@
 \BOOKMARK [2][-]{subsection.2.2}{Measuring PIIN}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{QRNG from PIIN using visible LEDs}{}% 5
 \BOOKMARK [2][-]{subsection.3.1}{Using SPAD Arrays to measure Intensity Fluctuations}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{title}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{SPAD Saturation Effect}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Detection Schemes}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Pulsed LED}{section.4}% 9
