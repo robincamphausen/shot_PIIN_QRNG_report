@@ -158,10 +158,22 @@
 	As can be seen the detected standard deviation only accurately represents the true intensity noise level for low mean photon numbers per pixel - above around 0.3 photons per pixel the detected noise begins to saturate. In practice this means that the dynamic range per dead time of an N-pixel SPAD array is around $0.3\times N$. 
 	
 \section{Detection Schemes}
-	For the experiments described in this report the MPD SPC3 camera was used as the SPAD array. This commercially available camera has 2048 SPAD pixels, arranged in a 64-by-32 matrix, a variable frame rate up to 96kHz and external and internal gating capabilities. All following methods are set up according to the scheme shown in figure \ref{fig:ledsetup1v2}, where a Semrock narrowband filter was used to lengthen the coherence time.
+	For the experiments described in this report the MPD SPC3 camera was used as the SPAD array. This commercially available camera has 2048 SPAD pixels, arranged in a 64-by-32 matrix, a variable frame rate up to 96kHz and external and internal gating capabilities. All following methods are set up according to the scheme shown in figure \ref{fig:ledsetup1v2}, where a Semrock narrowband filter was used to lengthen the coherence time. As the $\tau_c$ limit is given by the narrowband filter, the primary method available to us for increasing the measurable PIIN is to decrease the integration time $T$ as much as possible. The following experimental schemes outline three methods to achieve this end.
 	
 \subsection{Pulsed LED}\label{scheme1}
-	In the first scheme
+	In the first scheme we relied on a pulsed LED illumination to provide a short effective integration time, while the SPAD array was not gated. The Picoquant PLS450 (using a PDL 800-D as the current driver) was used, which produces light pulses with a length of approximately 800ps. Fig. \ref{fig:detectionscheme1} illustrates the scheme. As the set-up is kept in the dark, light is only incident on the SPAD array when the LED emits a pulse. Source pulse rate and camera frame rate were synchronised at 62.5kHz so one light pulse arrives per camera frame and therefore the effective integration time equals the LED pulse length, as shown by the green shaded area in fig. \ref{fig:detectionscheme1} ($T = t_{LED}$). The wavelength of the source was 458nm, while the spectral width of the filter used (Semrock LL01-458-12.5) was 3nm, which by eq. \ref{eq:coherenceTime} leads to a $\tau_c$ of 0.25ps. By equation \ref{eq:fullPIINstats} the expected standard deviation due to PIIN was therefore $1.8\%$ of the intensity. In experimental trials however, no difference was observed between the low coherence and high coherence regimes, for several proposed reasons. Firstly, the detected mean intensities were on the order of 400 photons per frame, implying an expected 7-photon standard deviation due to PIIN, compared to a $\sigma_{shot} = \sqrt{400}=20$ due to shot noise, as well as technical or electronic noise. This resulted in a very low detection tolerance for distinguishing between the low and high coherence regimes in the first place. Secondly, the MPD SPC3 camera used for this trial had an extremely low fill factor - the active area of the SPAD per pixel was very much smaller than the pixel itself. This resulted in a low collection efficiency, which in turn resulted in the necessity to somewhat focus the light onto the SPAD array sensor. Due to this it is likely that the dynamic range of the detector was greatly reduced as not all pixels were receiving light, and the ones that were, were perhaps saturating.
+	
+	The most significant drawback of this detection scheme however was that the fast pulsed LED needs a sensitive, bulky and expensive laser diode driver (Picoquant PDL 800-D) to achieve the required pulse quality, thereby negating any advantage the SPAD detection purports to have in cost and portability in the first place. It is therefore desirable to make use of a scheme with less stringent requirements on the source electronics, and to instead use the SPAD array's gating capabilities to reduce the integration time $T$.
+	
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.8\linewidth]{Figures/detectionScheme1}
+			\caption{Detection Scheme 1: Short integration time $T$ provided by pulse length of LED. The SPAD array is constantly active, only switching off for the so-called interframe dead time $dt_{if}$, which equals 10ns - at a frame rate of 62.5kHz this inactive time between frames is negligible. The LED pulse rate and SPAD array frame rate are synchronised such that one pulse arrives per frame.}
+			\label{fig:detectionscheme1}
+		\end{figure}
+		
+\subsection{Gating the SPAD array}
+	
 	
 \clearpage
 \bibliographystyle{ieeetr}

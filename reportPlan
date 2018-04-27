@@ -18,17 +18,17 @@ motivate experiment in visible:
 - *proof of principle: see difference in noise level between low coherence (PIIN too fast) and longer coherence (PIIN visible)*
 
 - *SPAD saturation issue: need to stay in quasi-linear regime*
-- export saturation curve in high resolution from Matlab:
-![Image](SPAD_saturationCurve)
+- export saturation curve in high resolution from Matlab (and recalculate including higher order Poisson terms):
+*![Image](SPAD_saturationCurve)*
 
 Set-up 1: pulsed LED
 --------------------
-	- T given by pulse length
-	- high dark counts
+	- *T given by pulse length*
+	- *high dark counts*
 	- low collection efficiency due to low fill factor (need MLA)
 	- expensive pulsed LED as T is only determined by pulse length so tight requirements on pulse length
-![Image](LED_setup1_v2)
-![Image](detectionScheme1)
+*![Image](LED_setup1_v2)*
+*![Image](detectionScheme1)*
 ![Image](resultsPulsedLED)
 
 Set-up 2: CW LED & gated detection
