@@ -23,37 +23,40 @@ motivate experiment in visible:
 
 Set-up 1: pulsed LED
 --------------------
-	- *T given by pulse length*
-	- *high dark counts*
-	- low collection efficiency due to low fill factor (need MLA)
-	- expensive pulsed LED as T is only determined by pulse length so tight requirements on pulse length
+- *T given by pulse length*
+- *high dark counts*
+- *low collection efficiency due to low fill factor (need MLA)*
+- *expensive pulsed LED as T is only determined by pulse length so tight requirements on pulse length*
 *![Image](LED_setup1_v2)*
 *![Image](detectionScheme1)*
-![Image](resultsPulsedLED)
+
+	![Image](resultsPulsedLED)
 
 Set-up 2: CW LED & gated detection
 ----------------------------------
-	- cheaper as only need camera & FPGA (both can be integrated on microcircuits)
-	- through combination of ext gate and SW gate can achieve shorter T
-	- low dark counts
-![Image](electronics_schematic)
-![Image](detectionScheme2)
+- *cheaper as only need camera & FPGA (both can be integrated on microcircuits)*
+- *through combination of ext gate and SW gate can achieve shorter T*
+- *low dark counts*
+*![Image](electronics_schematic)*
+*![Image](detectionScheme2)*
 
-	- maxRate given by 1/deadTime as pixels are continuously counting, therefore max signal is T x maxRate
+- *maxRate given by 1/deadTime as pixels are continuously counting, therefore max signal is T x maxRate*
+
 	- max LED power limited by damage current threshold
 
 Set-up 3: pulsed LED & gated detection
 --------------------------------------
-	- addresses maxRate and damage threshold issue
-	- pulse length of LED not as critical - can use cheaper components
-	- need to match electronic delays
-	- final version use LED pulse width as well as gates to get ultra short effective T
+- *addresses maxRate*
+- *pulse length of LED not as critical - can use cheaper components*
+- *need to match electronic delays*
+- *final version use LED pulse width as well as gates to get ultra short effective T*
 ![Image](detectionScheme3b)
 
 
 Future prospects/integration
 ============================
 
-- faster LED rise times enable shorter T - from plasmonic LED paper
-- LED array through diffuser & filter onto SPAD array
-- bigger faster cheaper SPAD arrays with timetagging
+- *faster LED rise times enable shorter T - from plasmonic LED paper*
+- *LED array through diffuser & filter onto SPAD array*
+- *bigger faster cheaper SPAD arrays with timetagging*
+- *sensor level gating*

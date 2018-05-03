@@ -81,4 +81,23 @@ A.~C. Ulku, C.~Bruschini, X.~Michalet, S.~Weiss, and E.~Charbon, ``A 512×512
   {SPAD} {Image} {Sensor} with {Built}-{In} {Gating} for {Phasor} {Based}
   {Real}-{Time} {siFLIM},'' p.~12, 2017.
 
+\bibitem{antolovic_spad_2017}
+I.~M. Antolovic, S.~Burri, C.~Bruschini, R.~A. Hoebe, and E.~Charbon, ``{SPAD}
+  imagers for super resolution localization microscopy enable analysis of fast
+  fluorophore blinking,'' {\em Scientific Reports}, vol.~7, p.~44108, Mar.
+  2017.
+
+\bibitem{tsakmakidis_large_2016}
+K.~L. Tsakmakidis, R.~W. Boyd, E.~Yablonovitch, and X.~Zhang, ``Large
+  spontaneous-emission enhancements in metallic nanostructures: towards {LEDs}
+  faster than lasers [{Invited}],'' {\em Optics Express}, vol.~24, p.~17916,
+  Aug. 2016.
+
+\bibitem{tosi_fast-gated_2011}
+A.~Tosi, A.~D. Mora, F.~Zappa, A.~Gulinatti, D.~Contini, A.~Pifferi,
+  L.~Spinelli, A.~Torricelli, and R.~Cubeddu, ``Fast-gated single-photon
+  counting technique widens dynamic range and speeds up acquisition time in
+  time-resolved measurements,'' {\em Optics Express}, vol.~19, p.~10735, May
+  2011.
+
 \end{thebibliography}
